@@ -1,0 +1,70 @@
+@use "components";
+*{
+	font-family: 'Roboto Condensed', sans-serif;
+}
+
+h1,h2,h3{
+	font-weight: bold !important;
+}
+
+.menu{
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-between;
+	margin-top:2rem;
+	margin-bottom: 2rem;
+	span,a{
+		font-size:2rem;
+		color:components.$color-header;
+	}
+	span{
+		font-weight: bold;
+	}
+}
+
+.header{
+	margin-bottom: 10rem;
+	margin-top: 3.5rem;
+	p{
+		font-size: 4rem;
+		font-weight: bold;
+	}
+}
+
+.projects{
+	margin-bottom: 3.5rem;
+	margin-top: 3.5rem;
+
+	img{
+		opacity: 0.5;
+		box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+		margin: 1rem;
+		&:hover{
+			opacity: 1;
+		}
+	}
+}
+
+.footer{
+	margin-bottom: 3rem;
+	margin-top: 4rem;
+	display: flex;
+	justify-content: space-between;
+	a{
+		text-decoration: none;
+		margin-right: 1rem;
+	}
+}
+
+.back{
+	margin-bottom: 3rem;
+}
+
+.about{
+	h2{
+		font-size: 5rem;
+	}
+	p{
+		font-size: 2rem;
+	}
+}

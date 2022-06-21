@@ -1,0 +1,114 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&display=swap");
+.btn-main {
+  padding: 0.25rem 1.5rem;
+  color: #303030;
+  border: solid 1px #303030;
+  text-decoration: none;
+  border-radius: 0.5rem;
+  transition: 0.5s;
+}
+.btn-main:hover {
+  color: #0075FF;
+  border: solid 1px #0075FF;
+}
+
+.main-menu li {
+  list-style: none;
+  display: inline;
+  margin-left: 1rem;
+}
+.main-menu li a {
+  text-decoration: none;
+  transition: 0.5s;
+}
+.main-menu li a:hover {
+  text-decoration: line-through;
+  color: #0075FF;
+}
+
+.icon-sm {
+  font-size: 1.25rem;
+  color: #202020;
+  padding: 0.4rem 0.65rem;
+  border-radius: 50%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2509803922);
+}
+.icon-sm:hover {
+  color: #0075FF;
+}
+
+.image img {
+  max-width: 32rem;
+  margin: 0;
+  padding: 0;
+  transition: 0.5s;
+}
+
+* {
+  font-family: "Roboto Condensed", sans-serif;
+}
+
+h1, h2, h3 {
+  font-weight: bold !important;
+}
+
+.menu {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+.menu span, .menu a {
+  font-size: 2rem;
+  color: #202020;
+}
+.menu span {
+  font-weight: bold;
+}
+
+.header {
+  margin-bottom: 10rem;
+  margin-top: 3.5rem;
+}
+.header p {
+  font-size: 4rem;
+  font-weight: bold;
+}
+
+.projects {
+  margin-bottom: 3.5rem;
+  margin-top: 3.5rem;
+}
+.projects img {
+  opacity: 0.5;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+  margin: 1rem;
+}
+.projects img:hover {
+  opacity: 1;
+}
+
+.footer {
+  margin-bottom: 3rem;
+  margin-top: 4rem;
+  display: flex;
+  justify-content: space-between;
+}
+.footer a {
+  text-decoration: none;
+  margin-right: 1rem;
+}
+
+.back {
+  margin-bottom: 3rem;
+}
+
+.about h2 {
+  font-size: 5rem;
+}
+.about p {
+  font-size: 2rem;
+}
+
+/*# sourceMappingURL=styles.css.map */

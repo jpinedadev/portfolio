@@ -1,0 +1,61 @@
+@mixin btn-base{
+	padding:0.25rem 1.5rem;
+}
+
+$color-header:#202020;
+$color-text:#303030;
+$color-hover:#0075FF;
+
+.btn-main{
+	@include btn-base();
+	
+	color: $color-text;
+	border: solid 1px $color-text;
+	text-decoration: none;
+	border-radius:0.5rem;
+	transition: 0.5s;
+
+	&:hover{
+		color: $color-hover;
+		border:solid 1px $color-hover;
+	}
+}
+
+
+.main-menu{
+	li{
+		list-style: none;
+		display: inline;
+		margin-left:1rem;
+		a{
+			text-decoration: none;
+			transition: 0.5s;
+
+			&:hover{
+				text-decoration: line-through;
+				color: $color-hover;
+			}
+		}
+	}
+}
+
+.icon-sm{
+		font-size: 1.25rem;
+		color: $color-header;
+		padding: 0.4rem 0.65rem;
+		border-radius:50%;
+		box-shadow: 0 0 10px #00000040;
+		&:hover{
+				color: $color-hover;
+			}
+}
+
+.image {
+
+    img {
+        max-width: 32rem;
+        margin: 0;
+        padding: 0;
+        transition: 0.5s;
+		}
+    }
