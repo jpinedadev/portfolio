@@ -37,8 +37,13 @@ h1,h2,h3{
 
 	img{
 		opacity: 0.5;
+		max-width: 32rem;
+        margin: 0;
+        padding: 0;
+        transition: 0.5s;
 		box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
 		margin: 1rem;
+
 		&:hover{
 			opacity: 1;
 		}
@@ -67,4 +72,65 @@ h1,h2,h3{
 	p{
 		font-size: 2rem;
 	}
+}
+
+@media (max-width: 768px) {
+
+	.projects {
+		justify-content: center;
+		align-items: center;
+	    img {
+	        width: 20rem;
+			}
+	    }
+	
+
+	.menu{
+		display: flex;
+		flex-flow: column nowrap;
+		justify-content: center;
+
+		.logo{
+			span{
+
+			}
+		}
+
+		.main-menu{
+			ul{
+				li{
+				display: block;
+				margin-left:0;
+				}
+			}	
+		}
+	}
+
+	.header{
+		
+		p{
+			font-size: 2rem;
+			font-weight: bold;
+		}
+	}
+
+	.footer{
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		div{
+			margin: 0.5rem;
+		}
+	}
+
+	.about{
+		h2{
+			font-size: 3rem;
+		}
+		p{
+			font-size: 2rem;
+		}
+	}
+
 }

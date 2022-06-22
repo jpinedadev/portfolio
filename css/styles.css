@@ -12,16 +12,16 @@
   border: solid 1px #0075FF;
 }
 
-.main-menu li {
+.main-menu ul li {
   list-style: none;
   display: inline;
   margin-left: 1rem;
 }
-.main-menu li a {
+.main-menu ul li a {
   text-decoration: none;
   transition: 0.5s;
 }
-.main-menu li a:hover {
+.main-menu ul li a:hover {
   text-decoration: line-through;
   color: #0075FF;
 }
@@ -35,13 +35,6 @@
 }
 .icon-sm:hover {
   color: #0075FF;
-}
-
-.image img {
-  max-width: 32rem;
-  margin: 0;
-  padding: 0;
-  transition: 0.5s;
 }
 
 * {
@@ -82,6 +75,10 @@ h1, h2, h3 {
 }
 .projects img {
   opacity: 0.5;
+  max-width: 32rem;
+  margin: 0;
+  padding: 0;
+  transition: 0.5s;
   box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
   margin: 1rem;
 }
@@ -109,6 +106,44 @@ h1, h2, h3 {
 }
 .about p {
   font-size: 2rem;
+}
+
+@media (max-width: 768px) {
+  .projects {
+    justify-content: center;
+    align-items: center;
+  }
+  .projects img {
+    width: 20rem;
+  }
+  .menu {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+  }
+  .menu .main-menu ul li {
+    display: block;
+    margin-left: 0;
+  }
+  .header p {
+    font-size: 2rem;
+    font-weight: bold;
+  }
+  .footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .footer div {
+    margin: 0.5rem;
+  }
+  .about h2 {
+    font-size: 3rem;
+  }
+  .about p {
+    font-size: 2rem;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */

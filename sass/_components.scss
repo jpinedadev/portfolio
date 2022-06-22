@@ -23,17 +23,19 @@ $color-hover:#0075FF;
 
 
 .main-menu{
-	li{
+	ul{
+		li{
 		list-style: none;
 		display: inline;
 		margin-left:1rem;
-		a{
-			text-decoration: none;
-			transition: 0.5s;
+			a{
+				text-decoration: none;
+				transition: 0.5s;
 
-			&:hover{
-				text-decoration: line-through;
-				color: $color-hover;
+				&:hover{
+					text-decoration: line-through;
+					color: $color-hover;
+				}
 			}
 		}
 	}
@@ -50,12 +52,3 @@ $color-hover:#0075FF;
 			}
 }
 
-.image {
-
-    img {
-        max-width: 32rem;
-        margin: 0;
-        padding: 0;
-        transition: 0.5s;
-		}
-    }

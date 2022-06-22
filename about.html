@@ -2,6 +2,29 @@
 <!DOCTYPE html>
 <html>
 <head>
+
+ <!--seo-->
+    <meta property="og:title" content="Julio Pineda Portfolio">
+    <meta name="author" content="Julio Pineda">
+    <meta property="og:locale" content="en_US">
+    <meta name="description" content="Front-end Developer">
+    <meta property="og:description" content="Front-end Developer">
+    <link rel="canonical" href="https://jpinedadev.github.io/portfolio/">
+    <meta property="og:url" content="https://jpinedadev.github.io/portfolio/">
+    <meta property="og:site_name" content="Julio Pineda">
+    <meta property="og:image" content="assets/img/portfolio.png">
+
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:site" content="jpinedadev">
+    <meta name="twitter:creator" content="jpinedadev">
+    <meta name="twitter:title" content="jpinedadev">
+    <meta name="twitter:description" content="Front-end Developer">
+    <meta name="twitter:image" content="assets/img/portfolio.png">
+    <meta name="twitter:image:alt" content="Julio Pineda">
+    <link href="assets/img/portfolio.png" rel="shortcut icon" type="image/png">
+  
+    <!--end seo-->
+
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Julio Pineda</title>
@@ -19,6 +42,10 @@
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css"
     />
     <link rel="stylesheet" href="css/styles.css" />
+
+    <!-- AOS -->
+      <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
     <!--Estilos css-->
     <link rel="stylesheet" type="text/css" href="css/styles.css">
 
@@ -26,18 +53,17 @@
 <body>
 
 	<!--Section Menu-->
-	<section class="container menu">
-		<div>
+	<nav class="container menu">
+		<div class="logo">
 			<span>| Julio Pineda |</span>
 		</div>
-		<div>
-			<ul class="main-menu">
+		<div class="main-menu">
+			<ul>
 			<li><a href="#">about</a></li>
 			<li><a href="assets/docs/cv.pdf">resume</a></li>
 		</ul>
 		</div>
-	</section>
-
+	</nav>
 	
 	<!--About-->
 	<section class="container">
@@ -54,7 +80,7 @@
 	</section>
 
 	<!--Footer-->
-		<div class="container footer">
+		<footer class="container footer">
 			<div>
 				<a href="https://www.linkedin.com/in/jpinedadev/" target="_blank">
 				<i class="bi bi-linkedin  icon-sm"></i>
@@ -75,7 +101,7 @@
 				</span>
 			</div>
 			
-		</div>
+		</footer>
 	
 </body>
 
@@ -85,5 +111,10 @@
 	    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
 	    crossorigin="anonymous"
 	  ></script>
+
+	  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+	  <script>
+	    AOS.init();
+	  </script>
 
 </html>
