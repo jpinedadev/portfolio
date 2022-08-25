@@ -3,6 +3,10 @@
 	font-family: 'Roboto Condensed', sans-serif;
 }
 
+html, body{
+	background-color: #222f3e;
+}
+
 h1,h2,h3{
 	font-weight: bold !important;
 }
@@ -13,18 +17,17 @@ h1,h2,h3{
 	justify-content: space-between;
 	margin-top:2rem;
 	margin-bottom: 2rem;
-	span,a{
+	span,a,li{
 		font-size:2rem;
 		color:components.$color-header;
-	}
-	span{
-		font-weight: bold;
+		text-decoration: none;
 	}
 }
 
 .header{
 	margin-bottom: 10rem;
 	margin-top: 3.5rem;
+	color:components.$color-text;
 	p{
 		font-size: 4rem;
 		font-weight: bold;
@@ -50,11 +53,13 @@ h1,h2,h3{
 	}
 }
 
+
 .footer{
 	margin-bottom: 3rem;
 	margin-top: 4rem;
 	display: flex;
 	justify-content: space-between;
+	color:components.$color-text;
 	a{
 		text-decoration: none;
 		margin-right: 1rem;
@@ -65,14 +70,19 @@ h1,h2,h3{
 	margin-bottom: 3rem;
 }
 
-.about{
-	h2{
-		font-size: 5rem;
-	}
-	p{
-		font-size: 2rem;
+.container{
+	.about{
+		color:components.$color-text;
+		h2{
+			font-size: 5rem;
+		}
+		p{
+			font-size: 2rem;
+		}
 	}
 }
+
+
 
 @media (max-width: 768px) {
 
