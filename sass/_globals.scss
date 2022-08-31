@@ -73,11 +73,28 @@ h1,h2,h3{
 .container{
 	.about{
 		color:components.$color-text;
-		h2{
-			font-size: 5rem;
+		.about-me{
+			h2{
+				font-size: 4rem;
+			}
+			p{
+				font-size: 1.5rem;
+			}
+			margin-bottom: 3rem;
 		}
-		p{
-			font-size: 2rem;
+		.skills{
+			.icon-skill{
+				display: flex;
+				flex-wrap: wrap;
+				flex-direction: row;
+				justify-content: center;
+				align-items: center;
+				span{
+					width: 115px;
+					height: 115px;
+				}
+
+			}
 		}
 	}
 }
@@ -94,17 +111,10 @@ h1,h2,h3{
 			}
 	    }
 	
-
 	.menu{
 		display: flex;
 		flex-flow: column nowrap;
 		justify-content: center;
-
-		.logo{
-			span{
-
-			}
-		}
 
 		.main-menu{
 			ul{
@@ -135,12 +145,14 @@ h1,h2,h3{
 	}
 
 	.about{
-		h2{
-			font-size: 3rem;
+		.about-me{
+		
 		}
-		p{
-			font-size: 2rem;
+		.skills{
+		
+			.icon-skill{
+				
+			}
 		}
 	}
-
 }
